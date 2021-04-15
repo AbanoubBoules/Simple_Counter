@@ -1,0 +1,78 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background-image: url('img/167660-Spider-Man-Marvel_Comics-Iron_Fist.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+.container {
+    background-color:rgba(1, 0, 0, 0.68);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.wrapper {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.wrapper p{
+    z-index:9999;
+    position:relative;
+    display:inline-block;
+    color:#ffd800;
+    font-size:48px;
+    padding-bottom:120px;
+}
+.wrapper p::before {
+        z-index: -1;
+        position: absolute;
+        content: '';
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        left: -12%;
+        top: -73%;
+        animation-name: shine;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+@keyframes shine
+{
+    0%,100%{
+        box-shadow:0px 0px 32px -12px #ffd800;
+    }
+    50% {
+        box-shadow: 0px 0px 32px -3px #ffd800;
+    }
+}
+button {
+    padding: 10px,38px;
+    border: 1px solid #A9A9A9;
+    border-radius: 28px;
+    color: #fff;
+    background-color: #010050;
+    transition:all .2s ease;
+    outline:0;
+    height:37px;
+    width:100px;
+    margin-right:15px;
+}
+button:hover,
+button:focus
+{
+    border-color:#ffd800;
+    color:#ffd800;
+    box-shadow:0px 4px 27px -12px #ffd800;
+}
+.tens{
+    font-size:22px;
+    margin-left:-13px;
+}
